@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Frontend skills">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="css/styles.css"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Project</title>
+</head>
+<body>
+    <div class="popup-container ">
+        <div class="poup-container__header">       
+            <a class="close"><img src="img/close.png" alt="#"></a>
+            <h2 class="header-container__title">Регистрация обратной связи</h2>
+        </div>
+            <form id="popup">
+
+                <input type="hidden" name="project_name" value="Дипломный проект">
+                <input type="hidden" name="admin_email" value="natnetl@yandex.ru">
+                <input type="hidden" name="form_subject" value="Тема">
+
+                <label class="form-container__label">Имя:</label>
+                <input type="text" class="form-container__input" required placeholder="Ваше имя" name="Имя">
+                
+                <label class="form-container__label">Номер телефона:</label>
+                <input type="tel" class="form-container__input" required placeholder="+7 (___) ___-__-__" name="Телефон">
+                
+                <label class="form-container__label">E-mail:</label>
+                <input type="email" class="form-container__input" required placeholder="pochta@mail.ru" name="Почта">
+                
+                <input type="submit" class="form-container__button">
+            
+            </form>          
+    </div>
+
+    <div class="overlay ">
+        <div class="overlay-popup">
+            <h2>Спасибо за заявку</h2>
+            <button type="submit" class="overlay-popup__button">Ок</button>
+        </div>
+    </div>
+
+    <div class="shadow"></div>
+
+    <header>
+        <div class="fixed-container flex-container adaptation-container">
+                                      
+            <button class="adaptetion-menu"><img src="img/adaptetion-menu.png" alt="menu"></button>
+            <nav class="main-nav">
+                <a class="main-nav__link nav-active" href="#skills">Услуги</a>
+                <a class="main-nav__link" href="#exemples">Портфолио</a>
+                <a class="main-nav__link" href="#banner">Стоимость</a>
+            </nav>
+
+            <nav class="nav-menu ">
+                <ul class="nav-menu__link-list">
+                    <li class="link-list__item"><a href="#skills">Услуги</a></li>
+                    <li class="link-list__item"><a href="#exemples">Портфолио</a></li>
+                    <li class="link-list__item"><a href="#banner">Стоимость</a></li>
+                </ul>
+            </nav>
+
+            <a class="header-contact__adaptetion" href="tel:+7(499)995-77-55">+7 (499) 995-55-77</a>
+            
+
+            <div class="header-list__contact flex-container"> 
+                <a class="header-contact__number" href="tel:+7(499)995-77-55">+7 (499) 995-55-77</a>
+                <button  class="header-contact_button">Заказать звонок</button>
+            </div>
+
+            <a class="header-call"><img class="header-call__photo" src="img/call.png" alt=""></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="profession-wrapper">
+            <div class="profession-wrapper__container fixed-container adaptation-container">
+                <div class="profession-card flex-container">
+                    <div class="profession-card__information">
+                        <h1 class="profession-information__name">Ларионов Данил</h1>
+                        <p class="profession-information__profession">Frontend-разработчик и веб-верстальщик</p>
+                        <button class="profession-information__button">Узнать больше</button>                    
+                    </div>
+                    <img class="profession-card__photo" src="img/man.png" alt="#">
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-wrapper "> 
+            <div class="skills-wrapper__container fixed-container ">
+                <h2 class="skills-container__title">Что я делаю</h2>
+                <div class="skills">
+                    
+                    <article class="skills-article-1">
+                        <div class="skills-photo-1 skills-photo"></div>
+                        <h3 class="skills-article__subtitle">Вёрстка лендинг–страниц
+                            и сайтов любой сложности</h3>
+                    </article>
+
+                    <article class="skills-article-2">
+                        <div class="skills-photo-2 skills-photo"></div>
+                        <h3 class="skills-article__subtitle">Адаптивная вёрстка под все
+                            браузеры и устройства</h3>
+                    </article>
+                    
+                    <article class="skills-article-3">
+                        <div class="skills-photo-3 skills-photo"></div>
+                        <h3 class="skills-article__subtitle">Frontend–разработка
+                            и программирование</h3>
+                    </article>
+
+                    <article class="skills-article-4">
+                        <div class="skills-photo-4 skills-photo"></div>
+                        <h3 class="skills-article__subtitle">Исправление и доработка
+                            существующей вёрстки</h3>
+                    </article>
+                    
+                </div>
+                <button  type="submit"  class="skills-cost">Узнать стоимость</button>
+            
+            </div>
+        </section>
+
+        <section id="exemples" class="exemples-wrapper">
+            <div class="exemples-wrapper__container fixed-container">
+                <h2 class="exemples-container__title">Примеры моих работ</h2>              
+                <div class="exemples-cotainer__elements flex-container">
+                       
+                       <article class="elements-container__slider ">
+                            <img class="slider-container__photo" src="img/Layer-1.png" alt="#">
+                            <h3 class="slider-container__title">Сайт психолога Веры Антоновой</h3>
+                       </article> 
+
+                        <article class="elements-container__slider">
+                            <img class="slider-container__photo" src="img/Layer-2.png" alt="#">
+                            <h3 class="slider-container__title">Сайт магазина детской одежды</h3>
+                        </article> 
+                       
+                        <article class="elements-container__slider">
+                            <img class="slider-container__photo" src="img/Layer-3.png" alt="#">
+                            <h3 class="slider-container__title">Сайт магазина «Рыбалов»</h3>
+                        </article> 
+
+                        <article class="elements-container__slider">
+                            <img class="slider-container__photo" src="img/work.png" alt="#">
+                            <h3 class="slider-container__title">Сайт новостного агенства</h3>
+                        </article>
+                        
+                </div>
+                
+              
+            </div>
+
+            <button type="submit" class="exemples-container__button">Заказать проект</button>
+
+        </section>
+
+        <section id="banner" class="banner-wrapper">
+            <div class="banner-wrapper__information">
+                <h3 class="banner-information__top">Адаптивная вёрстка под все устройства
+                    и&nbsp;браузеры от&nbsp;1000 рублей всего за 4 часа.*</h3>
+                
+                
+                <p class="banner-information__bottom">
+                    <span>*</span>
+                    <small class="banner-bottom__condition"> Срок и стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально,
+                        &nbsp;&nbsp;&nbsp;в зависимости от сложности задач.</small>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="footer-contacts fixed-container ">
+                <nav  class="footer-contact__nav">
+                    <ul id="menu" class="nav-contact__list">
+                        <li class="list-contact__item"><a href="#skills">Услуги</a></li>
+                        <li class="list-contact__item"><a href="#exemples">Портфолио</a></li>
+                        <li class="list-contact__item"><a href="#banner">Стоимость</a></li>
+                    </ul>
+                </nav>
+
+                <address class="footer-contacts__personal">
+                    <a class="personal-contracts__number" href="tel:+7(499)995-77-55">+7 (499) 995-77-55</a>
+                    <a class="personal-contracts__mail" href="mailto:nat_netl3@bk.ru">dmitry@alekseev.com</a>
+                </address>
+
+               
+
+                <div class="footer-contacts__call">
+                    <button class="call-contacts__button">Заказать звонок</button>
+                    <div class="footer-contacts__social">
+                        <address class="social-contacts__link">
+                            <a class="link-contacts__vk" href="https://vk.com/"></a>
+                            <a class="link-contacts__facebook" href="https://about.fb.com/"></a>
+                            <a class="link-contacts__twitter" href="https://twitter.com/"></a>
+                            <a class="link-contacts__instagram" href="https://www.instagram.com/"></a>
+                        </address>
+                    </div>
+                </div>
+
+            </div>  
+
+            <div class="footer-contacts__person">
+                <p class="person-contacts__name"><small class="name-contacts__small">© Дмитрий Алексеев, 2016 - 2018</small></p>
+            </div>
+        </section>
+    </footer>
+
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
